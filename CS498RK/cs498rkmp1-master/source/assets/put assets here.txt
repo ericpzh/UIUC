@@ -1,0 +1,5 @@
+feel free to delete this file and add whatever folders you like
+
+we aren't going to grade your project organization, but you may find it wise
+to get into the habit of organizing your assets, especially when you start
+working on larger and larger projects!
