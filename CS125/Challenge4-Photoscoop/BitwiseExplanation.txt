@@ -1,0 +1,49 @@
+Explanation of "& 0xFF" by Matt Joras (CS125 Course Assistant)
+This is a note relevant to the "bitwise mask" present in MP4.
+
+So first off, what the heck is that thing called? The jargon term for it is usually "bitwise mask". In the context of Photoscoop (MP4) we use it to "isolate" the first 8 bits of an RGB value (the blue component). It's called a "mask" because it "masks" out the other bits by making them zero.
+
+Magical! But we regrettably don't go to Hogwarts, so how does it do that?
+
+Before we understand how a bitwise mask works, it's worth understanding what the bitwise and operator ("&") does.
+
+It's called an "and" because it works very similarly to the logical operator "&&", and it's "bitwise" since it operates on individual bits in an integer. Confused? Let's have an example!
+
+All integers in a computer are actually stored as binary bit sequences. Suppose I have an integer a in binary represented by 1010 (decimal value 10), and an integer b in binary represented by 1111 (decimal value 15).
+
+So what happens if we do a & b ? To do this, you can think about it two ways, the first is by thinking of each bit as a boolean value, where 0 is false, and 1 is true. E.g. 0&1 is the same as false && true, which is false, so 0&1=0. (Note: a "birwise or" ("|") works in an analogous way to the boolean "||" operator, and likewise for the rest of the boolean operators).
+
+Then you just do the logical operations individually and construct your new number:
+(1&1) (0&1) (1&1) (0&1) You do the operations in parentheses individually and then put the results together to get the number:
+1010
+
+An equivalent way to do a bitwise and is to simply multiply the individual bit "columns" together:
+1010
+1111
+1010
+
+As we can see, both methods are equivalent. (Also, did you notice that when we bitwise and something with all 1's we get the original bit sequence back?)
+
+So that's what the bitwise and does. Now onto the "bitwise mask"
+Let's take at a look at the value we are anding with, 0xFF. That's just the hexadecimal representation of the decimal number 255. I said earlier that all integers are stored in a computer using bit sequences. What's the bit sequence of 0xFF? We just need to convert from base 16 to base 2, resulting in:
+11111111
+A sequence of 8 ones! Interesting. Now we can explicitly do the bitwise and operation with some arbitrary sequence of bits. How about we try doing an RGB value? That could be fun AND instructional!
+
+Here's a pretty one from the RGBUtilitesTest program in MP4:
+0x44332211
+If we want to manually do the bitwise and operation with our previous value, we have to put this in base two first. Doing so yields:
+01000100 00110011 00100010 00010001
+
+That's a lot of digits! I've grouped the bits into bytes (groups of eight) to make it easier to read. This is our RGB pixel info in binary form where the byte groups represent alpha, red, green, and blue from left to right.
+
+So we want to bitwise and that value with our mask. But how are we going to do that if our mask only has eight digits and our pixel has 32? Fear not! We simply fill in the higher orders with zeros to get this:
+00000000 00000000 00000000 11111111
+
+Fantastic! Now we are all ready to explicitly do our bitwise and operation. Let's do the multiplication method since it's easier for us humans:
+0x44332211 & 0xFF =
+01000100 00110011 00100010 00010001
+00000000 00000000 00000000 11111111
+00000000 00000000 00000000 00010001
+
+Holy zeros batman! When we bitwise anded it with the mask, everything but the first 8 bits became zero! That's what "masking" really means. And since we used entirely 1's for our first byte, those bits were completely preserved.
+Converting our result back to hexadecimal we see that we have ended up with: 0x11, which is the blue component of our RGB value! Huzzah, computer science works!
