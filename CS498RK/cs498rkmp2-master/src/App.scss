@@ -1,0 +1,32 @@
+$font:'Source Sans Pro', sans-serif;
+.App {
+  text-align: center;
+}
+.header{
+  color: white;
+  font-family: $font;
+  margin: 1%;
+}
+.Placeholder{
+  p{
+    padding-top: 1%;
+    text-align: right;
+  }
+}
+
+.background{
+  position: fixed;
+  background:#eee;
+  height: 100%;
+  width: 100%;
+  padding: 5% 0;
+}
+.buttoncontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.filterbutton{
+    margin:0.5%;
+}

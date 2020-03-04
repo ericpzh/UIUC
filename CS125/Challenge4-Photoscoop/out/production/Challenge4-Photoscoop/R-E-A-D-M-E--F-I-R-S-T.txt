@@ -1,0 +1,213 @@
+
+Challenge4-Photoscoop PLEASE READ CAREFULLY - 
+
+Graded in two week, Monday March 7th, 8pm
+(This MP takes more time.  Start early, ask questions early.)
+
+Honor students: Complete the stenography class to find and display the secret picture hidden in one of the given image files.
+
+* What you will learn (Learning Objectives)
+
+The purpose of this programming assignment is for you to learn how to use the following -
+
+JAVA CORE KNOW-HOW:
+# Debugging - run unit tests in the debugger to find the infinite loop
+# Using bit operators (shift, bitwise-and) to extract red,green,blue values from an rgb value.
+# Use 2D arrays to manipulate RGB images.
+# Use static methods (including arguments and return values).
+# Use loops and expressions.
+# Use hexadecimal literals.
+
+And be able to develop and exercise the following skills -
+
+PROGRAMMING SKILLS & DOMAIN KNOWLEDGE:
+# Process picture data
+# Extend a complete Graphical User Interface application
+# Use the RGB color model.
+# Debug existing code.
+# Add new functionality to existing codebase that includes several files.
+# Work with a larger codebase where some sections are not relevant to the problem in hand.
+# Use procedural abstraction and code-reuse to hide implementation details
+
+RELEVANT BOOK SECTIONS: (http://math.hws.edu/javanotes)
+ch2.2.2 Types and Literals
+ch4.2 Static methods (Programming in the large)
+ch4.3 Parameters
+ch4.2 Return values
+ch13.1.2 Working With Pixels 
+
+
+Hi there,
+Here's the almost-finished 'Photoscoop' application that we hope to embed into every advanced camera phone next year.
+The idea is that we'll give away a free version now with just some basic features then users can pay to use more features
+(e.g. working with movie files).
+
+By the way, run the playlists in the debugger so that you can find and fix the infinite loop!
+
+I've already built the basic structure of the application - menus/ loading/saving etc but I need you to actually implement the photo effects.
+I've ABSTRACTED out the details of how Java represents images in screen: Your effects methods just work with 2D integer arrays.
+
+There are some missing features and possibly a bug or two in my GUI part - but dont worry I'll get these done before tomorrow's investor meeting & demo.
+At some point I'll add a mask functionality so that your effects only get applied to part of the image.However as the effects code only
+sees 2D arrays, I can add this in later and we wont need to change any of your code.
+Also I cut some corners in programming style - I used static methods whenever possible; there's no class that represents an image document yet.
+
+One of the 'cool' features that the bloggers wanted was redeye reduction and chroma key (see wikipedia) built into this application.
+
+By the way, pay attention to the javadoc comments- /** blah blah */ 
+that are immediately before each method:
+They contain useful notes about what the method should do.
+
+Best,
+Your dot-com startup partner.
+ps. sorry I can't help today - I'll be at a meeting with the bank to setup payroll and checking.
+pps. The other programmer quit (he got too confused about column and row indices when rotating images)
+pppps Suggest you draw it on a piece of paper. [0][0] is the top left
+
+
+IMPLEMENTATION REQUIREMENTS
+
+Your challenge is to implement the following photo effects:
+
+# resize - resize a picture (2D int array) to a given width or height, or ii) to the same width,height of a another array.
+The new picture may be larger or smaller than the original.
+# half   - half the size of the picture. Create a new array of half the width and height and populate accordingly.
+# merge  - independently merge the red values of the source and background, the green and the blue.
+The output should be the same size as the input. Scale (x,y) values when reading the background
+(e.g. so the far right pixel of the source is merged with the far-right pixel ofthe background).
+# rotate - Rotate the picture CCW (counter-clockwise).
+# flip   - Flip the picture vertically, along a horizonal axis.
+# mirror - Mirror the picture along a vertical axis.
+# key    - Perform a chroma key assuming a green background.
+If the image has a different size than the background use the resize() method to change it to be equal to the background size.
+# funky  - This should do something novel and interesting (you need to decide what it should be)
+
+The code for each of these effects are static methods inside PixelEffects.java
+Note there are two resize methods; only one of the them needs to have  loops!
+- One resize method can delegate the work to the other one.
+
+I've created a redeye reduction effect but it wont work until you've implemented the toRed, toGreen methods etc.
+
+To make undo work we also need a copy() method that creates a deep copy of the source array.
+i.e. The source and the copy are completely independent.
+
+***************************************************
+The 2D arrays are arrays of arrays of integers
+int [][]picture;
+
+picture[0][0] represents the top-lefthand corner.
+picture.length is the width of the picture (in pixels)
+picture[0].length is the height of the picture (in pixels).
+Each integer entry e.g. picture[25][28] is an integer representation of the color of one screen pixel.
+***************************************************
+
+You will need to edit the following files:
+# PixelEffects.java - the effect methods described above. This class should delegate extracting red/green/blue values to the methods inside RGBUtilities.
+
+# Effects.java - A simple if-else method that acts as the glue between the menus and the actual processing methods.
+Note this method should delegate all of its pixel processing work to methods inside PixelEffects.
+This method is just a large number of if-else statements that connect the menu item to each of the methods inside pixeleffects.
+
+# PlayListUtil.java - A set of class methods to manipulate lists.
+
+# RGBUtilities.java
+
+This class holds the methods to convert between individual red,green,blue values and single integer representation of the color.
+Each red,green or blue component can have a value between 0 (dark) and 255(fully on).
+i.e. each component uses 8 bits of information.
+
+This is where base-16 'hexadecimal' 0,1,2,..9,A,B,C,D,E,F) becomes useful to describe different colors because each hex digit describes 4 bits of information.
+So two digits are required to get values from 0..255: . 00 , 01, 02, 0F,10 ...F0, F1... FF (=255 in decimal).
+This means we can read the red,green,blue color components directly from it's hexadecimal format.
+For example, C044FF means red=C0 (192 out of 255), green=44 (68 out of 255) and blue=FF (255 out of 255).
+So this color would be mostly blue, with some red and a small amount of green.
+
+In Java, to tell the compiler that we want speak in hexadecimal we preface the number with 0x
+e.g.
+0x10 is 16 in decimal.
+0x1000 is 256 * 16 in decimal
+0x100000 is 256 * 256 * 16 in decimal
+
+Here's some examples to show how writing a number in hexadecimal makes it easy to read- the red, green and blue component values:
+e.g. 0x--ffffff implies red,green and blue are all at the maximum of 255 out of 255; completely white
+e.g. 0x--ffff00 implies red,green are strongly on  but without any blue; bright yellow
+e.g. 0x--808080 implies red,green and blue components are all half on; gray.
+e.g. 0x--000000 implies red,green and blue are all off; black!
+
+There's actually a fourth component (shown above as '--'); the 'alpha' channel. This is used in advanced image functions for transparency/opaqueness when combining images together.
+For our purposes it gets in the way: The highest bit in a Java integer is used to represent the sign of the number. 
+So if the alpha component has a value >= 0x80 then it turns the raw  color values negative.
+
+The fix is to use bit operators: If we only want the lowest eight bits (-blue) use "& 255' to 'MASK' out the other unwanted bits.
+If we want the green component, we need to shift the next eight bits to the right and then apply the same Mask trick. (look up <<)
+
+Put this code into the RGBUtilities.toRed(),toGreen,toBlue methods and get it right once : then use these methods in your PixelEffects methods!
+
+Re. Chroma Key - 
+To pass the unit tests you just need to choose the background pixel whenever the source pixel is green.
+However I suggest you experiment with the test images to find a good way to differentiate between green background and non-green in all of the test images.
+Here's some ideas you might want to try - but feel free to improve on them /invent your own.
+
+green > 100 and blue <100
+green > max(blue,red)
+green > (blue+red)
+green > blue 
+
+... You could combine them in some way or include additional numerical factors:
+e.g. green > 32 && green < 250 && green < blue * 1.5;
+... but it's upto you to find something that works for the various test images that we have.
+
+DEVELOPMENT
+
+To run the program run the class 'Photoscoop' and test your functions on the given images
+To run the automated tests run the unit tests, or run GradeChallenge4.
+It's useful to read the source code of the tests to see what they test.
+
+
+
+
+* Submission, Grading and subversion (Same as before)
+
+In the package window, right click on your java file and select TEAM> COMMIT... and complete the dialog that pops up.
+
+You need to COMMIT your changes to the java files (RGBUtilities.java,Effects.java,PixelEffects.java,PlayListUtil.java) back to the subversion repository.
+You may, but do not need to, make changes to any other files - for grading purposes we will only use the above four files.
+You can commit your files multiple times - in fact we expect you to. (You can even go back to previous versions that you committed).
+
+After the deadline we will grade the last version you committed BEFORE the deadline.
+
+You can check that your solution is correct by running the automated unit tests (there is a testing file provided for each one).
+
+You can run all the tests in one go: In the package window right click on 'default package' and select RUN AS... JUNIT TEST
+You can run the autograder yourself: right click on AutomaticGrader and select RUN AS ... JAVA APPLICATION. This has the effect of
+running all the unit tests and printing a score based on the number of tests passed.
+
+As always there's Piazza and office hours. It helps to ask us questions well before the deadline. So get stuck early :-)
+Regards,
+Bill and the CS125 team.
+
+Some hints:
+PlayListUtil.java is the only part of this MP that is independent of Photoscoop. 
+For the Photoscoop code we suggest you work on order RGBUtilities.java, PixelEffects.java, then Effects.java.
+This is mostly because PixelEffects.java needs functions in RGBAUtilities.java 
+and the test for Effects.java won't run properly until you've finished PixelEffects.java
+Effects is just a bunch of if/else. Note you may need to print out the parameter value.
+Stenography test is not hard if you understand bit shifts and masking
+
+* Test Images Attribution
+The source of the test images in the testimage subdirectory are included below. The original authors retain copyright.
+
+# Weather map 
+ http://www.noaanews.noaa.gov/stories2007/images/noaa-weather-map-04-24-2007.jpg
+# A TV Studio Green screen example -
+ http://www.flickr.com/photos/geminidustin/275375860/
+# Plastic face on a green background - 
+ http://www.flickr.com/photos/darwinbell/2038618702/
+# infinitecat
+ http://www.infinitecat.com/infinite/cat-html/1-100/30.html
+# camera man with green background
+ http://holamun2.com
+# Hair against a Green-screen
+ http://www.dv.com/features/features_item.php?articleId=192501232
+# Redeye
+ http://en.wikipedia.org/wiki/Image:BoldRedEye.JPG

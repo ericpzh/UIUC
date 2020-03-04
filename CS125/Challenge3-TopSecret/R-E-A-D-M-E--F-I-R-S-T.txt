@@ -1,0 +1,91 @@
+Challenge3 - TopSecret
+
+Due: Monday February 22th, 2016 8pm (1 week)
+
+As the Julius Caesar's lead programmer for the Roman Empire (RE) you have the following programming task today:
+* Write a program from scratch to help Jules encrypt and decrypt his military orders.
+ - This task is described in CaesarCipher.txt
+ 
+The four graded java files are:
+* CaesarCipher (see instructions in CaesarCipher.txt)
+* CipherBreaker (see instructions in CipherBreaker.txt)
+* OddSum
+* MagicEightBall
+
+There's also several example classes to play with.
+
+* Eclipse hints 
+
+In the package view, if you change a file and have not yet committed the change :
+Then, depending on your subversion plugin, either the icon will include a white star on a back background OR it will add a '>' before the name.
+The white star or '>' will disappear once you have committed the file.
+
+
+The most useful views (windows) are : Package, Console, Problems, JUnit and SVN Repository views.
+
+* Getting help
+
+Please use the class newsgroup. However please don't post solutions / correct code.
+
+Use the TA office hours
+NB It's a good idea to start early and get stuck early, rather than panic two hours before the deadline!
+Good luck and have fun!
+
+* What you will learn (Learning Objectives)
+
+The purpose of these programming assignments is for you to learn following -
+JAVA CORE KNOW-HOW:
+# Format text output using TextIO put and putln methods.
+# Read input from the keyboard using getln,getlnInt.
+# Create and use String, int, boolean, double variables.
+# Perform simple calculations using arithmetic operators.
+# Use String instance methods length, charAt, concatenation
+# Use integer arithmetic (characters as integers, modulus).
+# Use loops and expressions to validate user input and process characters
+
+PROGRAMMING CORE SKILLS:
+# Translate program descriptions into a complete Java program.
+# Use unit tests and manual testing as part of the development process.
+# Use Eclipse Development environment to create, run, test and commit programs.
+# Add comments and authorship
+# Reverse engineering (reading Java unit test code and figuring out the specification & implementation)
+
+RELEVANT BOOK SECTIONS: (http://math.hws.edu/javanotes)
+From the previous assignment -
+ch1.4 Fundamental Building Blocks of Programs
+ch2.1 The Basic Java Application,
+ch2.2 Variables and the Primitive Types
+ch2.3 Strings, Objects, Enums, and Subroutines
+ch2.4 Text Input and Output
+COURSE NOTES (COURSE NOTES - https://wiki.engr.illinois.edu/display/cs125/CourseNotes2006)
+
+New for this assignment - 
+ch3.1 Loops and Branches
+ch3.3 while and do-while
+ch3.4 for statement
+ch3.5 If Statement 
+
+* Submission, Grading and subversion (Same as before)
+
+In the package window, right click on your java file and select TEAM> COMMIT... and complete the dialog that pops up.
+
+You need to COMMIT your changes to the java files (CaesarCipher.java, OddSum.java,CipherBreaker.java,MagicEightBall.java) back to the subversion repository.
+You may but do not need to make changes to any other files - for grading purposes we will only use the above four files.
+You can commit your files multiple times - in fact we expect you to. (You can even go back to previous versions that you committed).
+
+After the deadline we will grade the last version you committed BEFORE the deadline.
+
+You can check that your solution is correct by running the automated unit tests (there is a testing file provided for each one).
+
+You can run all the tests in one go: In the package window right click on 'default package' and select RUN AS... JUNIT TEST
+You can run the autograder yourself: right click on AutomaticScoreCheck and select RUN AS ... JAVA APPLICATION. This has the effect of
+running all the unit tests and printing a score based on the number of tests passed.
+
+* Cheating
+Learn by doing - 
+Remember that you must *type* all of your code yourself; digitally copying another student's work is cheating.
+
+You may post non-working code to the CS125 Piazza group to get help.
+But you may not digitally send your working code to share with others. 
+
+Have fun! -Bill & the CS125 Team

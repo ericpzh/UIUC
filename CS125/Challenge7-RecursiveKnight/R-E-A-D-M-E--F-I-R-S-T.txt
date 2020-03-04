@@ -1,0 +1,151 @@
+Challenge7 Recursive Knight
+============================
+
+Due: Monday May 2, 2016 8pm. 
+(This MP Graded out of 80 possible points - not 100)
+	
+	Please commit your java files back to subversion.
+	Do not create additional java files / directories etc!
+	Your submission is automatically compiled and graded.
+	To earn points, Make sure there are NO Compile errors ANYWHERE in this project.
+	(you'll notice that NamedRobot has a compile error)
+	There should be no Red Marks on any class.
+	Be sure to commit all classes back to subversion.
+	Incorrect/Missing/Duplicate classes etc will impact your score.
+	
+	Points for this MP are based on passing the unit tests.
+	Please make sure you implement recursive methods recursively! 
+
+Objectives:
+	Review ascii picture examples
+	Creating recursive methods to perform useful work
+	Shortest path on a 2D maze
+	Selection sort of 3D coordinates
+	Writing code to satisfy unit tests
+	Have fun with the applets
+	See the utility of unit testing small pieces of code
+	Exploiting weaknesses in insecure systems
+
+Picture examples:
+The ascii picture examples are not graded - please review them to see
+how they generate each picture.
+
+The trick is to remember the activation diagram
+ FOO(0,4) -> FOO (1,3) -> FOO(2,2) --> FOO(3,1) --> FOO(4,0)
+                                                       Base Case!
+                                                <-- (return)
+                                                  
+So the pictures tend to follow this structure:
+What should be printed _before_ the recursive call ?
+What should be printed when we hit the base case?
+What should be printed _after_ the recursion call completes again?
+
+ 
+There are several java classes in this MP that need to be completed:
+	BinarySearch, GridCounting, RobotLink,
+	InsecureCombinationLockBreaker (*),
+	InsecurePasswordLockBreaker, 
+	MolecularSort, MazeRunner, RecursiveKnight, 
+	SelectionSort.
+	You can test your implementation of each using the unit tests and also run the
+	applets.
+	
+	You do not need to edit the unit tests or the applet classes.
+	- However you are welcome to view their source code if you are interested to see
+	how they work.
+
+(*) Only for Honors students and the curious.
+
+Each of the above problems include units tests and documentation in the
+basic java files. There's also some notes below for the three large problems:
+MolecularSort, MazeRunner and RecursiveKnight.
+
+1) Molecular Sort
+In this applet we want to display the atoms in the correct order as the molecule is rotated.
+We will sort the atoms' coordinates by the Z values.
+The 3D display code has already been written:
+	Run the applet.
+	Notice how it does not appear to rotate correctly because we always paint the atoms
+	in the same order?
+	
+ For the Molecular Sort implement a recursive selection sort.
+ Once the tests pass, run the applet again. You should recognize the molecule! 
+Notes:
+Selection sort is actually a terrible choice for performance - O(N^2) but it is easy to implement!
+A much faster sort is quick sort which is O(NlogN) time on average.
+ 
+2) Recursive Knight Puzzle.
+The knight on a chess piece can move in an L shape (two squares + one square at 90 degrees)
+i.e. if the knight is at the center of a chess board it can move to 8 new positions.
+ 
+In this puzzle the player tries to visit as many squares as possible on the small board.
+You cannot re-visit the same square again.
+
+To provide some visual feedback to the player the game displays the minimum
+number of moves required to move to each of the remaining squares from the current position.
+
+It's your challenge to write the recursive method to implement this calculation.
+The applet takes care of the GUI (Graphical User Interface) interaction.
+Each time the knight is moved by the player, the explore method 
+is called with an 2D integer array (all cells are initially zero).
+
+Fill out the entries in the array with the minimum number of moves required.
+A zero value is special - it means that the square was not visited by your recursive method.
+Your recursive method is also given a 2D boolean array 'visited'. 
+You do not change values in this array - instead it marks positions that cannot be used because
+the player has already visited them.
+
+3) And last but not least the MazeRunner
+TO DO: Implement the MazeRunner class.
+Notes on how to implement MazeRunner class are provided in the file.
+
+You're stuck in a maze trying to outrun the two slower hunters.
+If you get caught a new maze is generated.
+Your runner will take the shortest path to the mouse coordinate,
+if a path exists.
+The hunters will take the shortest path to your player.
+To make it more interesting, when each hunter determines its shortest path
+to your square, the square of the _other_ hunter is marked as a wall (blocked).
+This means they will tend to cut you off - the second hunter will move
+towards your escape route! (see movePlayers() method in MazeApplet)
+
+By the way, the MazeRunnerApplet uses a thread and an anonymous java class to move the runners. 
+This is beyond CS125 material - but you may be curious to see how it works.
+
+Notes:
+
+If the MazeRunner runs too slowly on your machine, try reducing the grid size from 15 to 11.
+
+For a slightly different game set MazeApplet.CHANGE_MAZE to a positive value, to make the maze slowly change as you play.
+For example a value of 4 means that every 4 moves the maze structure will change.
+
+There are limits to the shortest path algorithm as given: The number of paths checked increases exponentially
+as the maze increases in size. More complicated algorithms exist to find the best path
+("Dynamic Programming", "Branch and Bound") - but they're more complicated to implement.
+For example: start from the target. Mark all of squares one distance away. Start from those squares,
+find all of the squares a minimum two steps away, etc. Thus the solution spreads out through the maze
+like a tidal wave. For each square remember the compass direction towards the best neighbor and the total length of path
+to the target.
+
+Recursion really comes into its own when you have more complex data structures (CS225).
+But a 2D maze is simple concrete domain that demonstrates some of the power of recursion.
+In this problem we have a simple domain - a 2D array of booleans and simple optimization (the length of the path)
+Hopefully you can see that it would be easy to generalize this problem. For example, we could assign a weight to 
+each point (representing the difficulty/speed) or change how different paths are scored -
+ e.g. minimize the number of turns, instead of the path length.
+
+Unit testing:
+If your unit tests fail:
+* Look at the unit test - what is it trying to test?
+* Look at the unit test Failure trace (the exception stack).
+Click on the line numbers to see exactly where it failed.
+
+These are tricky problems for CS125 and I encourage you to get stuck early and use Piazza and friends.
+Good luck!
+We trust that you'll find these programs fun, challenging and informative.
+
+Yes they are challenging - but so is everything that is worth doing
+and they are the culmination of everything you've learned in CS125.
+
+Bill and the CS125 team.
+

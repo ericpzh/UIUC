@@ -1,0 +1,33 @@
+Exam report for exam9 / zp3
+
+
+                 Question ID PL Score Recorded Score
+----------------------------------------------------
+            avl-max-nodes-1a        1              1
+            avl-min-nodes-1d        0              0
+      avl-time-complexity-1d        1              1
+        mc-avl-rotation-002g        1              1
+        mc-avl-rotation-003e        1              1
+        mc-avl-rotation-004a        1              1
+         mc-btree-insert-01d        1              1
+         mc-btree-insert-02b        1              1
+      mc-btree-motivation-1a        1              1
+  mc-btree-node-capacity-02c        1              1
+          mc-kdtree-child-1b        1              1
+           mc-kdtree-tree-1a        1              1
+mc-nearest-neighbor-which-1c        1              1
+           quiz12-btreemax-c        0              0
+           quiz12-btreemin-a        0              0
+----------------------------------------------------
+                       Total       12             12
+
+
+
+Questions are marked 1 for correct, 0 for incorrect.
+Scores are normalized for the gradebook.
+
+PL Score = Score recorded by PrairieLearn.
+Recored Score = Score in our gradebook (accounting for possible overrides/regrades).
+
+If you believe there is an error, please send email (NOT piazza) to <mattox@illinois.edu>.
+

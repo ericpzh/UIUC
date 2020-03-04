@@ -1,0 +1,58 @@
+Challenge6 - Recursion, See?
+
+Due: Monday, April 11 @ 8pm. You have approx. two weeks to complete this challenge for 100%, 
+with additional regrades (<100%) after that.
+
+There are three recursive problems and one sarcastic Ninja 
+as part of this MP so please start early. 
+
+Good luck and have fun!
+Need help? There's office hours and Piazza in case you get stuck.
+
+Bill and the CS125 staff. 
+
+Overview:
+This assignment will hone your recursion and debugging skills. 
+You'll be working on three recursive problems and one debugging problem:
+
+Firstly, you'll see a linked list class. We'll use this class to link words together.
+You will need to complete the given recursive instance methods and one non-recursive class method.
+
+Secondly, you'll be working with a slightly more complex data structure: a family tree.
+
+Finally, you'll be writing a recursive algorithm to perform a complex Gene Sequencing Analysis problem.
+This is not as hard as it appears - the recursive description is very close to the required Java code.
+
+Each of these recursive problems are discussed in the Task files. Each problem has it's own set of test cases and a single file that you need to modify.
+
+And watch out for the Debugger Ninja. There are four graded debugging methods.
+You have the source code of each Ninja method. Your challenge is to step through the code using the debugger
+to determine the correct starting value. 
+
+Be careful - An incorrect value leads to sarcasm and insults from the Ninja.
+
+Grading & Submission:
+Ensure that your modified BlackBeltDebuggerChallenge,LinkedList.java,Person.java and GeneAnalysis.java are committed back to subversion before the deadline.
+You can check your expected score by running the java file  "AutomaticGrader.java"
+Remember that your final version may not contain *any* compile errors.
+(Check the problems, also there will be a red mark against the filename in the package view) 
+
+You can debug your programs by running the unit tests individually and/or using the debugger to step through your code.
+Efficient solutions will run fairly quickly - it should be pass all tests in a few seconds.
+If your tests are passing but take minutes then check to see if you can reduce
+the number of times you make a recursive call. Perhaps you can cache the result
+in a temporary result instead?
+
+Relevant Reading?
+See the Lecture's web page and the lecture code examples:
+https://courses.engr.illinois.edu/cs125/sp2016/index.php
+https://subversion.ews.illinois.edu/svn/sp16-cs125/_shared/
+
+But as you asked, here's a couple of starting points  
+http://chortle.ccsu.edu/java5/Notes/chap71/ch71_1.html [Recursion]
+http://www.javaworld.com/javaworld/jw-06-2003/jw-0613-java101.html [Linked Lists]
+
+Do's and Dont's
+Commit code that has no compile errors.
+You need to type in all of the code yourself.
+Don't share your electronic files for others to use - that's cheating.

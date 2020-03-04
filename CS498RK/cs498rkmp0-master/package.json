@@ -1,0 +1,29 @@
+{
+  "name": "mp0",
+  "version": "1.0.0",
+  "description": "CS498RK MP 0 starter files",
+  "license": "ISC",
+  "repository": "github:uiuc-web-programming/mp0_starter",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open",
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "9.4.6",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "2.1.0",
+    "gh-pages": "^2.0.1",
+    "postcss-loader": "3.0.0",
+    "raw-loader": "^1.0.0",
+    "style-loader": "0.23.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

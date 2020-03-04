@@ -1,0 +1,59 @@
+
+Quote Printer (Part 2)- Help A Movie Buff find quotes lines.
+Learning Objectives
+ * Re-application of string and text processing
+ * Application of string features (trim, contains, toLowerCase, concatenation)
+
+
+This program reads a movie script and searches for the line(s) with the given text.
+
+Orientation
+When the program starts it asks you to enter the words to search for.
+The program reads one line at a time.
+If the line contains the search phrase it prints the current line number and the line
+ - See the example output below.
+ - Notice that the test is case insensitive.
+ 
+
+Commit commit commit! & Grade - See notes in ScriptPrinter.txt
+Manual & Automated Testing - See notes in ScriptPrinter.txt
+ 
+Hints
+You need to get the output exactly correct (including the printing a newline character at the end)
+Look at the sample code in MyScriptPrinter for ideas about the basic structure of your program.
+You need to use several string methods (see learning objectives) to solve this problem
+You only need to compare one line at a time 
+i.e. do not worry about checking  phrases that wrap over to the next line.
+
+(These examples are meant as guides; the given unit tests are authoritative).
+Example Output #1 (User input is 'spoon\n'):
+
+
+Please enter the word(s) to search for
+Searching for 'spoon'
+12 - blocks.  A skinny BOY holds a SPOON which sways like a
+17 - The Boy smiles as Neo picks up a spoon and tries to
+21 - SPOON BOY
+22 - Your spoon does not bend because
+23 - it is just that, a spoon.  Mine
+24 - bends because there is no spoon,
+29 - SPOON BOY
+30 - Link yourself to the spoon.
+31 - Become the spoon and bend
+34 - Neo nods, again holding up his spoon.
+37 - There is no spoon.  Right.
+39 - He concentrates.  The spoon begins to bend just as the
+45 - Spoon Boy smiles.
+Done Searching for 'spoon'
+
+Example Output #2 (User input is 'cookie a')
+Please enter the word(s) to search for
+Searching for 'cookie a'
+Done Searching for 'cookie a'
+
+Example Output #3 (User input is 'a cookie')
+Please enter the word(s) to search for
+Searching for 'a cookie'
+215 - You better take a cookie.  Got a
+218 - He eyes her, then takes a cookie.
+Done Searching for 'a cookie'

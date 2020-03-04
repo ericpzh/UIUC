@@ -1,0 +1,33 @@
+Exam report for exam7 / zp3
+
+
+                  Question ID PL Score Recorded Score
+-----------------------------------------------------
+         mc-avl-rotation-001b        1              1
+mc-binaryTree-traversals-005e        0              0
+       mc-bst-delete-one-001c        1              1
+       mc-bst-delete-two-002c        1              1
+                mc-bst-nodes1        1              1
+                 mc-cpp3-001j        1              1
+                 mc-cpp3-003c        1              1
+                 mc-cpp3-003e        1              1
+                 mc-cpp4-006f        0              0
+                 mc-cpp4-007d        1              1
+        mc-fa17-mergesort-01d        0              0
+         mc-fa17-pick-adt-01b        1              1
+          mc-tree-properties3        1              1
+             quiz9-Huffman-3a        0              0
+             quiz9-Huffman-5b        1              1
+-----------------------------------------------------
+                        Total       11             11
+
+
+
+Questions are marked 1 for correct, 0 for incorrect.
+Scores are normalized for the gradebook.
+
+PL Score = Score recorded by PrairieLearn.
+Recored Score = Score in our gradebook (accounting for possible overrides/regrades).
+
+If you believe there is an error, please send email (NOT piazza) to <mattox@illinois.edu>.
+
