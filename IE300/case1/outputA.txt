@@ -1,0 +1,10 @@
+Using FlightTime data of flight from: ORD to LAX. 
+Number of observations in my dataset is: 729. 
+Target flight time is: 238.97min. 
+Typical time for this route is: 262.60min. 
+For airline: AA average delay is: 27.18min. 
+For airline: F9 average delay is: 27.17min. 
+For airline: NK average delay is: 33.85min. 
+For airline: UA average delay is: 39.91min. 
+For airline: VX average delay is: 11.98min. 
+So, the lowest delay time is: 11.98min of airline: VX. 

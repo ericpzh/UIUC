@@ -1,0 +1,14 @@
+P(SEA|Y)=(3+4*0.5)/(5+4)=0.55556
+P(SEA|N)=(1+4*0.5)/(3+4)=0.42857
+P(ATL|Y)=(1+4*0.5)/(5+4)=0.33333
+P(ATL|N)=(2+4*0.5)/(3+4)=0.57143
+P(Southwest|Y)=(2+4*1/3)/(5+4)=0.37037
+P(Southwest|N)=(1+4*1/3)/(3+4)=0.33333
+P(Good|Y)=(1+4*0.5)/(5+4)=0.33333
+P(Good|N)=(2+4*0.5)/(3+4)=0.57143
+P(Y)=0.625
+P(N)=0.375
+P(Y|SEA,ATL,Southwest)=P(Y)*P(SEA|Y)*P(ATL|Y)*P(Southwest|Y)*P(Good|Y)=0.625*0.55556*0.33333*0.37037*0.33333=0.014289
+P(N|SEA,ATL,Southwest)=P(N)*P(SEA|N)*P(ATL|N)*P(Southwest|N)*P(Good|N)=0.375*0.42857*0.57143*0.33333*0.57143=0.017493
+Since y = argmax{0.014289,0.022491}=0.028882 we classify SEA-ATL on Southwest as N.
+
