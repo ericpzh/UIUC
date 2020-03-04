@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+   
+<HTML>
+<HEAD>
+<TITLE>@TITLE@ by @AUTHOR@</TITLE>
+</HEAD>
+<BODY>
+@TITLE@ by @AUTHOR@<BR>
+<object
+codetype="application/java" type="application/x-java-applet"
+classid="java:@JAVACLASSTORUN@.class"
+archive="@JARNAME@" codebase="./"
+id="MyApplet" width="512" height="480" >
+<!-- we need these PARAM tags to make it work in IE -->
+<PARAM name="code" value="@JAVACLASSTORUN@"/>
+<PARAM name="archive" value="@JARNAME@"/>
+<PARAM name="type" value="application/x-java-applet">
+
+You need to install or enable Java Applets in your browser to see this content</object>
+<BR>
+</BODY>
+
+</html>
