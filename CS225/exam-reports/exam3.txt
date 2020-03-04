@@ -1,0 +1,28 @@
+Exam report for exam3 / zp3
+
+
+                       Question ID PL Score Recorded Score
+----------------------------------------------------------
+mc-constructor-destructor-fa17-01a        1              1
+                     mc-cpp2-008k3        0              0
+            mc-double-ptr-fa17-01e        1              1
+            mc-inheritance-fa16-1a        1              1
+             mc-reference-fa17-02b        1              1
+            mc-ref-params-fa16-02b        1              1
+            mc-ref-return-fa17-01a        1              1
+         mc-rule-of-three-fa17-01d        1              1
+               mc-virtual-fa17-01a        1              1
+                memdeallocation-2d        1              1
+----------------------------------------------------------
+                             Total        9              9
+
+
+
+Questions are marked 1 for correct, 0 for incorrect.
+Scores are normalized for the gradebook.
+
+PL Score = Score recorded by PrairieLearn.
+Recored Score = Score in our gradebook (accounting for possible overrides/regrades).
+
+If you believe there is an error, please send email (NOT piazza) to <mattox@illinois.edu>.
+
