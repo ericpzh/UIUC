@@ -1,0 +1,170 @@
+
+Julius Caesar used a simple encryption scheme to encrypt military messages.
+His military orders (written in Latin) were encoded by translating an 'A' to 'D', B to E etc.
+
+Plain:   ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Cipher:  DEFGHIJKLMNOPQRSTUVWXYZABC
+
+You can read more about this cipher here - 
+http://en.wikipedia.org/wiki/Caesar_cipher
+
+Today, this substitution algorithm is still used to hide passwords from casual reading.
+Typically a secret is encoded using an offset of 13 , so this encoding is known as 'ROT13'
+http://en.wikipedia.org/wiki/ROT13
+(A Puzzle for you - what's special about 13? Cryptic Clue:13+13=26 )
+
+Though Julius Caesar thought his scheme sufficiently secure, we no longer consider it be 
+sufficient encryption because it's trivial to decode and discover the original message.
+Using a computer it would be easy to generate all 25 possible shifts. 
+Or count the frequencies of each letter and determine the most likely shift by comparing
+this to frequencies of letters in the English Language.
+
++ Learning Objectives:
+- Introduction to shift ciphers and an encryption algorithm.
+- Thinking about characters as integers
+- Problem Decomposition (writing a complete program from a specification)
+- Creating testing and debugging a 30 line program.
+- String and Character processing using loops, conditions, flags
+- Using Java's String methods and char/int
+- Use loops and conditions to validate userinput and conditionally print error messages.
+
++ Patterns in Code:
+This program (and many others) makes use of the following pattern - 
+ boolean isOdd=true;
+ while(isOdd) { // if odd keep rolling the dice
+  ... do something e.g. roll dice
+  // code to change keepLooping e.g. isOdd =  dice % 2 == 1;
+ }
+ 
+Do you notice that you could also use a do-while or for loop in the above pattern?
+There are reasons to assign the expression to a variable (rather than just evaluated
+directly inside the while(____here___) : (1) You can use the variable name to explain
+what the expression is supposed to do. (2) You can re-use the variable inside the loop
+e.g. if( isOdd ) TextIO.putln("Roll again");
+
++ An incomplete list of Java methods, expressions and operators that may be useful: 
+ String methods:
+   s.charAt(i); s.length(); result += c; // where c is a char
+ Char expressions: 
+   c >='A'  c>='a'  c + 26    c - 'a'
+ Boolean and modulus operators
+  ! && || % == !=
+
++ What out for for TextIO.getInt vs. TextIO.getlnInt()
+This bug will bite you! 
+See the end of the file for details
+
++ Your challenge:
+Create a Java program, CaesarCipher.java that encodes and decodes text messages.
+Here's a description of what your program will _initially_ do
+(this specification does not include the "reverse engineering problem"):
+
+1. Ask the user for the offset to use
+(For example the user might enter  '3' to encode a message, '-3' to later decode the message).
+2. Check the user entered a valid value (accept -25 to -1 (inclusive) and 1 to 25 (inclusive).
+Do not accept 0 (why not?!), or any values >25 or <-25.
+3. Request a line of text. If the user enters a blank line. print 'Bye' and exit
+4. Print the line of text entered.
+5. Convert the line into uppercase then process the line using the shift offset. 
+6. Print the result
+7. Go back to step 3
+ 
+As an engineer it's your job to interpret this rough description and create a program that
+meets the user's requirements and expectations.
+
++ Reverse Engineering
+Oh, one more thing. To pass all tests you'll need to implement one additional secret feature that is
+not described here! You will need to use the error messages and look at the test input and output 
+data used in the 'testPositionShift' and 'testDecodePositionShift'
+
+TextIO.setInputCaptureOutput("999\nThere are two ways to write error-free programs, but only the third one works.\n\n");
+String expected =  ... see CaesarCipherTest.testPositionShift
+
+
++ Examples and Grading
+See the example output at the end of this file.
+Note output letters should be in uppercase (see example output).
+Punctuation and spaces should be left unchanged.
+Use manual and automated testing to develop your program.
+Your program is complete when it passes all of the given unit tests.
+Test your program manually or right-click on a single test to look at the errors.
+
++ Input assumptions
+Assume the shift value input is an integer but may not be one of the allowed values.
+Assume text input only uses upper and lowercase letters A through Z, digits, spaces and punctuation.
+
++ Extra challenge (not graded - just for fun)
+Create a new program DecodeCaesar.java that tries all 25 possible shift to automatically decrypt a message.
+Either print all possible shifts, or only the ones where the frequency of the vowels a and e are above some threshold.
+
++ Further reading
+http://www.theregister.co.uk/2006/04/19/mafia_don_clueless_crypto/print.html
+Clues left in the clumsily encrypted notes of a Mafia don have helped Italian investigators to track his associates and ultimately contributed to his capture after years on the run.
+The recently busted Bernardo Provenzano, reputed to be the "boss of bosses" of the Sicilian Mafia, used a modified form of the Caesar cipher to obscure "sensitive information" in notes left to either his family or underlings.
+
++ Example Output
+(please see the unit tests for more examples)
+
+* Example Output 1: (User enters 0\n26\n3\nABCD EFGHIJKLMNOPQRSTUVWXYZ!\n\n)
+
+Please enter the shift value (between -25..-1 and 1..25)
+0 is not a valid shift value.
+Please enter the shift value (between -25..-1 and 1..25)
+26 is not a valid shift value.
+Please enter the shift value (between -25..-1 and 1..25)
+Using shift value of 3
+Please enter the source text (empty line to quit)
+Source   :ABCD EFGHIJKLMNOPQRSTUVWXYZ!
+Processed:DEFG HIJKLMNOPQRSTUVWXYZABC!
+Please enter the source text (empty line to quit)
+Bye.
+
+
+* Example Output 2: (User enters -3\ndefg hijklmnopqrstuVWXYZABC!\n\n)
+
+Please enter the shift value (between -25..-1 and 1..25)
+Using shift value of -3
+Please enter the source text (empty line to quit)
+Source   :DEFG HIJKLMNOPQRSTUVWXYZABC!
+Processed:ABCD EFGHIJKLMNOPQRSTUVWXYZ!
+Please enter the source text (empty line to quit)
+Bye.
+
+
+* TextIO.getInt - from newsgroup ...
+>
+> String source;
+> TextIO.putln("Please enter the source text (empty line to quit)");
+> source = TextIO.getln();
+> TextIO.putln("Source :" + source);?");
+>
+> When I run it, it doesnt allow me to get input. When I type in the
+> console, nothing happens. I have no idea why this is happening. I used
+> the same exact method in the myscriptprinter MP and it worked fine, but
+> its not working for this one. Can I use Scanner in the MPs?
+
+This is a common error (so common I'm going to make it a powerpoint slide for my next lab class).
+
+Chances are, when getting your shift value, you are doing something like:
+
+int shift = TextIO.getInt();
+
+Now, if we consider what this does, you'll understand why it zips right through getting the user input.
+
+getInt() does simply that--gets an int from standard input (standard input being the console). Now, here's what a sample standard in might look like for a valid shift value:
+
+14\n
+
+Where \n is the user pressing the enter key. Now what getInt() does is scans the standard input and grabs the integer from the front and *leaves the rest behind*. In other words, your standard in now is:
+
+\n
+
+So when we get to your second user input part, the TextIO.getln(), it reads the standard input, which is a new line! So it reads the blank line into your source variable and moves on.
+
+This is obviously not what we intended. We can fix this by using a different function to get our shift integer--TextIO.getlnInt()!
+
+What does getlnInt() do differently than getInt() you ask? It kills that extra \n! So instead of leaving that blank line hanging around for TextIO.getln() to accidentally grab later, it clears standard input so that it's blank when TextIO.getln() is called--so TextIO will wait for the user to input the source line as we intended!
+
+tl;dr: Don't use TextIO.getInt() when getting an integer after a user presses enter. Use TextIO.getlnInt();
+
+In general, you will *always* want to be using the getln-style functions instead of the get-style functions.

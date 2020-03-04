@@ -1,0 +1,40 @@
+
+Your program will do the following: Print "Text?", Read in one line of text,
+print it and analyze the frequency of each character and print a summary -
+which describes the number of times each character appeared in the line:
+
+Count Upper and Lower case letters as the same. Print out the frequency of
+each letter, provided the frequency >0. Also count the number of spaces,
+digits and number of punctuation marks (Do not count the newline character at
+the end of the line). The only six punctuation marks you need to consider are
+"-'.!, Ignore all other characters (e.g. tabs,accents, chinese
+characeters...)
+
+For example, if the input is:A-C E'? 099A "
+
+Then the output should be (each count should be on a separate line):
+
+Text?
+A-C E'? 099A "
+A:2
+C:1
+E:1
+DIGITS:3
+SPACES:3
+PUNCTUATION:3
+
+Example output for input:2B @# OR NOT(2B)!
+
+Text?
+2B @# OR NOT(2B)!
+B:2
+N:1
+O:2
+R:1
+T:1
+DIGITS:2
+SPACES:3
+PUNCTUATION:1
+
+
+However see the unit test for definitive output examples.
