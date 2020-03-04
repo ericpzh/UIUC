@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="WebAppBuilder" default="build">
+	<target name="setup">
+		<mkdir dir="website" />
+
+		<tstamp>
+			<format property="timestamp" pattern="yyyy-dd-MM-hh-mm-ss" offset="-5" unit="hour" />
+		</tstamp>
+		<property name="jarname" value="uiuc-cs125-${timestamp}.jar" />
+	</target>
+	<target name="buildjars" depends="setup">
+		<delete dir="website" includes="*.jar" failonerror="false"/>
+		<jar basedir="." destfile="website/${jarname}" compress="true" includes="*.class">
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Implementation-Vendor" value="UIUC." />
+				<attribute name="Implementation-Title" value="UIUC CS125-MP8" />
+				<attribute name="Implementation-Version" value="0.1" />
+			</manifest>
+		</jar>
+	</target>
+	<target name="build" depends="buildjars">
+		<copy file="template.html" tofile="website/RecursiveKnight.html" overwrite="true">
+			<filterset>
+				<filter token="AUTHOR" value="${user.name}" />
+				<filter token="JAVACLASSTORUN" value="RecursiveKnightApplet" />
+				<filter token="TITLE" value="Recursive Knight" />
+				<filter token="JARNAME" value="${jarname}" />
+			</filterset>
+		</copy>
+		<copy file="template.html" tofile="website/MazeRunner.html" overwrite="true">
+			<filterset>
+				<filter token="AUTHOR" value="${user.name}" />
+				<filter token="JAVACLASSTORUN" value="MazeApplet" />
+				<filter token="TITLE" value="Maze Runner" />
+				<filter token="JARNAME" value="${jarname}" />
+			</filterset>
+		</copy>
+		<copy file="template.html" tofile="website/MolecularSort.html" overwrite="true">
+			<filterset>
+				<filter token="AUTHOR" value="${user.name}" />
+				<filter token="JAVACLASSTORUN" value="MolecularApplet" />
+				<filter token="TITLE" value="Molecule" />
+				<filter token="JARNAME" value="${jarname}" />
+			</filterset>
+		</copy>
+		<echo message="Now copy html files and ${jarname} from website/ subdirectory to your website" />
+	</target>
+
+</project>

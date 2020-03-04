@@ -1,0 +1,81 @@
+
+Challenge7 Recursion See? (Part 3)
+
+Commit GeneAnalysis.java back to subversion.
+
+Objectives:
+	* Creating a wrapper method
+	* Creating a recursive counting method based on a formal description
+	* Application of CS topics to gene sequencing analysis
+	* Believe in the power of recursion!
+
+Gene Sequence Alignment
+=======================
+
+First, some background on DNA sequences. 
+A gene sequence is composed of four nucleotides which are represented 
+as {A,G,T,C}.
+ 
+Suppose we want to know the similarity between these two sequences: 
+Gene1: ATCTGATC
+Gene2: TGCATAC
+
+During evolution, some nucleotides are deleted and some are inserted. 
+These two events("insertions" and "deletions") change the gene sequences.
+
+Fortunately, this problem is the equivalent as finding the 
+*Longest Common Subsequence*  of two sequences 
+which as a Computer Scientist you know how to solve.
+
+Q> What is the Longest Common Subsequence?
+
+Ans> 	*word1* is a subsequence of *word2* if the letters 
+		in word1 appear in the same order (but not necessarily next to each other)
+		within word2. For example, {free} is a subsequence of {reference} and 
+		{cast} is a subsequence of {encapsulation}. However, {hint} is not 
+		a subsequence of {inheritance} because although {inheritance} contains 
+		all the letters in {hint}, they do not occur in the same order.
+
+So back to our first example, we can align the two genes as follows:
+
+Gene 1: A T   C   T G A T C
+Gene 2:   T G C A T   A   C
+
+In this example, the Longest Common Subsequence(LCS) is TCTAC
+ie. There are *five* places where both genes have the same character. 
+In other words, the length of LCS is 5. So, we say that the alignment score = 5.
+
+Here's a formal recursive description of how to solve this problem.
+You'll be writing a Java method code to implement this.
+
+Let gene 1 sequence be represented by V:
+Let gene 2 sequence be represented by W:
+
+Let Vi be the i-th character of string V (0 <= i < V length)
+and Wj be j-th character of string W (0 <= j < W length)
+
+S(i,j) is the alignment score for Vi and Wj.
+
+The alignment score S(i,j) is computed by the maximum of 4 expressions:
+
+
+					S(i-1, j)
+S(i, j) = max {		S(i,j-1)
+					S(i-1,j-1)
+					S(i-1,j-1) +1 if Vi = Wj
+
+The base case should be obvious (and the unit tests check that you return the corret value).
+
+Your implementation:
+You need to create two methods in the GeneAnalysis class (we've started it for you).
+i) The recursive method that implements the above recursive problem.
+ii) A wrapper method. This method takes two strings and calls the recursive method to perform the work.
+Notice that the the recursive method starts from the end of the strings, so you should call the recursive method
+with the correct values for i and j. (it recursively calls itself with smaller values of i and j)
+Also, you only need to make three recursive calls not four!
+iii) Must be efficient - use local variables to store a recursive result so that you 
+do not need to calculate it again.
+
+Do not use a loops.
+
+Your work will be graded using tests that are very similar to the unit tests given in GeneTest.

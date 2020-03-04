@@ -1,0 +1,7 @@
+BlackBeltDebuggerChallenge
+--------------------------
+
+To pass each trial use the debugger.
+
+The Ninja does not write helpful comments.
+

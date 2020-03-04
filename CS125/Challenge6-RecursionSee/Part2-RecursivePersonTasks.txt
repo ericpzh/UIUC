@@ -1,0 +1,46 @@
+Challenge7 Recursion See? (Part 2)
+Due: see main readme file.
+
+Commit your modified Person.java file back to subversion.
+
+Objectives:
+
+* Use recursion to solve various types of problems.
+* Introduction to binary tree data structure.
+* Read and understand existing OO code.
+
+Part 2 [Family Tree]
+====================
+In part 2 of this Challenge, we will make a family tree. 
+We represent a person by three things: name, age and gender. 
+Every person may have up to two children. 
+
+The Assignment:
+
+ You will be adding code to the Person class provided to you in the MP project. You should use recursion
+ wherever possible. You are not allowed to use any loops. Specifically,you will be writing the following six instance methods.
+
+* count               -- this instance method take no parameters. Specifically,it should return the 
+						 number of people in the tree (including this person) and so this method
+						 returns an int. Note that if the family tree had only a single node,  count() would 
+						 return 1.
+		   
+* countGender         -- this instance method takes one parameter, a char denoting the gender we want to 
+						 count( we will only use 'M' and 'F' ). This method should return the number 
+						 of males or females in the family tree. So, the return type should be an int. 
+				 
+* countGrandChildern  -- this instance method takes no parameters and returns an int. This method should
+						 return the number of grandchildren of the current person. Note that the children, great 
+						 grandchildren... are NOT included. This method counts ONLY the grandchildren
+						 of the current person. Be sure to use recursion.
+						 Hint: make this method a wrapper to a general recursive method with a depth integer parameter.
+						
+* countMaxGenerations -- this instance method takes no parameters and counts the number of  generations 
+					     represented by the family tree. The method returns an int. 
+					     The root counts as the first generation. 
+					     
+* search             -- this instance method searches for a particular person in the family tree. 
+						 
+						 
+ You have been provided PersonTest to test your code. Make sure you pass each of the unit tests.
+

@@ -1,0 +1,47 @@
+Challenge6 Recursion See? (Part 1)
+
+Commit your LinkedList.java file back to subversion.
+
+Objectives:
+
+Create methods for a class that represents a linked list. Our class
+will contain one string, and then either a null value or a reference
+to the next portion of the linked list. You will be writing some
+methods for various purposes.
+
+Linked lists make it easy to add and remove items from it. Unlike arrays,
+you only need to change one or two nodes, and you do not need to recreate
+the whole linked list.
+
+A linked list is a simple data structure: Each java object (the link) contains a value 
+(in this example a word) and a reference to the next link.
+If the reference is null then there are no more links - the link is at the end of the list.
+You can read more about linked lists here - 
+http://www.javaworld.com/javaworld/jw-06-2003/jw-0613-java101.html
+However, we've created the class for you - your challenge is to implement the 
+forward and tail recursive methods!
+
+In the first four examples, we'll demonstrate using a linked list of three
+items: "one", "two", and "three".
+
+getLetterCount() - returns the amount of letters in the linked list (11 in the example).
+getLongestWord() - returns the longest word out of the linked list ("three" in the example).
+getSentence() - returns the linked list as a single string in the format "one two three."
+getReversedSentence() - the reverse of the above. The string looks like "three two one."
+createLinkedList() - create a new linked list from the given string array *.
+contains() - returns true if the linked list contains the given value.
+find() - returns the node of the linked list that contains the given value. This is very similar to contains().
+findLast() - same as above, but finds the element closest to the end of the linked list.
+append() - adds the given item to the end of the linked list.
+
+Hint: Rather than using a loop create a recursive helper method.
+
+Pay attention to the type of recursion you choose for each method. Most of the problems will
+probably lend themselves to forward recursion.
+
+The toString and getCount methods are already written. You can look
+at them for ideas on how to implement the following methods. They are
+both forward recursive methods, and are very similar to some of the methods
+that you will write. They first test to see if they are at the base case.
+If not, they add their current value (whether a count or the current string)
+and call themselves again on the next value.
