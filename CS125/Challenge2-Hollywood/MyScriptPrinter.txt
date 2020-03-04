@@ -1,0 +1,149 @@
+
+Script Printer - Help An Actor learn their lines.
+
+Learning Objectives
+ * String Literals or double quotes "\""
+ * Output formatting
+ * Program tracing & debugging
+ * Implementing features on a given code base
+ * Application of string features (indexOf,trim, concatenation)
+
+
+This program reads a movie script and prints out the lines for one actor.
+When the program starts it asks you to enter the name of the character.
+
+See thematrix.txt for an example of a movie script.
+The expected output of this program is shown below.
+
+Your users have requested the following fixes.
+* "Before processing the script  print the summary line "XXX's lines:"
+where XXX is the name of the character (always in uppercase)."
+* "Print three dashes '---' after processing the script, 
+so I'm sure that the program finished correctly." 
+* "It only works if I enter character's name in uppercase. 
+NEO/neo/Neo should all work."
+* "It only works for the first line - it needs to stop printing when
+it gets to a blank line"
+* "It should be formatted exactly the way what I want (see below)"
+* "Please add you netid(s) to the @author line in ScriptPrinter.java."
+
+Commit commit commit! & Grade
+You make changes to the local file system. 
+To push your changes back to subversion server you need to COMMIT your changes.
+
+Using the 'package' view right click on ScriptPrinter source file and select 
+Team > Commit. Enter a message and commit your changes to the repository.
+The icon will change to indicate that the repository and your local version are
+synchronized (identical).
+
+The last version that you committed to the repository before the deadline 
+will be used to grade your work. 
+
+You may commit your work multiple times. In fact you are encouraged to do so 
+(Even if your computer crashes/is stolen - you still have your partial work
+stored in the repository (you can even go back and get earlier versions).
+
+To check that your code will pass our tests you can use the automated testing
+included in this project. However, you should also test your program
+manually.
+
+Orientation
+View thematrix.txt
+Read the given code slowly. Check you understand each line.
+ 
+* Manual Testing
+Right click on the source code and select RUN AS... JAVA APPLICATION
+Find (or open) the 'Console' view. Click on it to enter an actor's name.
+Enter an example name (e.g. 'neo' or 'NEO') and check the output.
+Did your program generate the required output?
+
+* Automated Testing (and grading)
+Points are scored by passing the automated tests.
+You can check your progress by running the automated tests in this project.
+Find (or open) the 'Package' view. Right click on MyScriptPrinterTest 
+and select RUN AS... JUNIT TEST
+
+* Repeated testing
+To re-run the application or the unit test click on the arrow icon with the 
+green circular background (next to the bug). This will restart the app or
+the unit test.
+
+* Hints
+See the TODO hints in the java file
+You need to know how to print a double quote and concatenate strings:
+line = line.trim() 
+... may be useful to you: It removes spaces from the left -and right-hand sides.
+If the 'if statements' are incorrectly ordered you will get incorrect output 
+- can you figure out why?
+
+Example Output 
+(The examples below are meant as guides; the given unit tests are authoritative).
+
+Example #1
+User input is 'neo\n' ( \n means newline i.e. the enter key is pressed)
+
+Which character's lines would you like? (NEO,MORPHEUS,ORACLE)
+NEO's lines:
+NEO:"There is no spoon.  Right."
+NEO:"Hello?"
+NEO:"Hello?"
+NEO:"You're the Oracle?"
+NEO:"Yeah."
+NEO:"What vase?"
+NEO:"Sorry."
+NEO:"How did you know...?"
+NEO:"Who?"
+NEO:"I think so."
+NEO:"I don't know."
+NEO:"What's the good news?"
+NEO:"Is that it, then?"
+NEO:"You do?"
+---
+
+Example #2
+User input is 'Oracle\n'
+
+Which character's lines would you like? (NEO,MORPHEUS,ORACLE)
+ORACLE's lines:
+ORACLE:"I know.  You're Neo.  Be right"
+ORACLE:"with you."
+ORACLE:"Bingo.  I got to say I love seeing"
+ORACLE:"you non-believers.  It's really a"
+ORACLE:"relief.  All that pomp and"
+ORACLE:"circumstances just plain tucker me"
+ORACLE:"out.  Almost done.  Smell good,"
+ORACLE:"don't they?"
+ORACLE:"I'd ask you to sit down, but"
+ORACLE:"you're not going to anyway.  And"
+ORACLE:"don't worry about the vase."
+ORACLE:"The vase."
+ORACLE:"I said don't worry about it.  I'll"
+ORACLE:"get one of my kids to fix it."
+ORACLE:"What's really going to bake your"
+ORACLE:"noodle later on is, would you"
+ORACLE:"still have broken it if I hadn't"
+ORACLE:"said anything."
+ORACLE:"You're cuter than I thought.  I"
+ORACLE:"see why she likes you."
+ORACLE:"Not too bright, though."
+ORACLE:"You know why Morpheus brought you"
+ORACLE:"to see me?"
+ORACLE:"So? What do you think?  You think"
+ORACLE:"you're the one?"
+ORACLE:"You know what that means?  It's"
+ORACLE:"Latin.  Means, 'Know thyself.'"
+ORACLE:"Well, let's have a look at you."
+ORACLE:"Open your mouth.  Say, 'ahhh.'"
+ORACLE:"Hmmm.  You sure got the gift, but"
+ORACLE:"it's tricky.  I'd say the bad news"
+ORACLE:"is, you're not the one.  Still got"
+ORACLE:"a lot to learn.  Maybe next life."
+ORACLE:"Same as the bad news, you're not"
+ORACLE:"the one."
+ORACLE:"No.  Here."
+ORACLE:"You better take a cookie.  Got a"
+ORACLE:"big day ahead of you."
+ORACLE:"Make a believer out of you yet."
+---
+
+

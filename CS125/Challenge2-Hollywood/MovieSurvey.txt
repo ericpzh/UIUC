@@ -1,0 +1,104 @@
+
+MovieSurvey - A Survey to find out how people are watching movies
+
+Learning Objectives
+ * Re-application of string and text processing
+ * Application of string features (trim, contains, toLowerCase, concatenation)
+ * Integer and Floating point arithmetic 
+
+Orientation
+This program asks the users how they watch movies (cinema,DVD player,computer)
+and summarizes the results. See the example output at the end of this file.
+ 
+Specifically, the program you write should work as follows:
+
+    * First, some introductory lines are printed to the screen.
+    * Next, the program should prompt for the following three quantities, in the following order: the number of movies watched at a cinema, using a dvd player, using a computer.
+    * Next, the program should print out a summary of the input values.
+    * Next, the program should print out the total number of movies seen in one month.
+    * Next, the program should print out the percent of movies seen at the cinema to two decimal places.
+    * Finally, the program should print out the percent of movies seen outside of the cinema to two decimal places.
+
+Your program must include an authorship comment at the top of the file with your netid:
+ e.g. @author angrave
+/**
+ * A program to run a simple survey and report the results.
+ * See MovieSurvey.txt for more information.
+ * TODO: add your netid to the line below
+ * @author put-your-netid-here
+ */
+  
+Output Formatting Issues
+
+You must match our formatting exactly for anything that is printed to the screen by your program!! 
+- See the examples at the end of this file.
+Please make sure you capitalize correctly, put the spaces where they are supposed to go, use the right words, and so on. 
+There is no "partial credit" for getting things "sort of" right; even forgetting a period or a capital letter means your ouptut is wrong.
+ This is why you need to use the automated testing to check your output is exactly correct - 
+ if you only check your results by eye, you are likely to miss something.
+ 
+To get the two decimal precision we expect for the output, you might want to try something like this:
+
+        double percentage;
+        percentage = 50;
+        TextIO.putf("%.2f", percentage);
+
+The "%.2f" tells TextIO how to format the output of percentage. That is, "%.2f" tells TextIO that you need 2 precision of two decimal places.
+NB. In your MP, percentage won't equal 50; it will be computed based on the input provided by the user.
+
+Implementation notes
+
+For this problem, use only the Java ideas we discussed in the first nine lectures and lecture packets HOWEVER -- it's okay to use any additional things you know.
+You do not need to code for "correct grammar";  For example, you would print "Summary: 1 Cinema movies," rather than "Summary: 1 Cinema movie,", 
+
+You are allowed to make the following assumptions about the input values we will use to test your program:
+    * You can assume that all three values entered as input by the user will be non-negative integers.
+    * Furthermore, you can assume that at least one of those integers will NOT be zero (thereby preventing a possible division-by-zero error when you try to calculate the percent in the last step of the program).
+
+Testing Strategies
+
+Since this problem is relatively short, there's not much going on and thus not very many things you need to test. 
+But with this MP, there's a pretty good chance that if it works with one set of input values, it will work with all sets of input values.
+That said, make sure to test a few different totals and different fractions of cinema goers.    
+
+- Use manual testing to check the output by eye for different input values.
+Right click on your file and select RUN AS ... JAVA APPLICATION. Click on (or open) the Console window and enter your input values.
+
+- Use automated testing to check the output is exactly correct for the example test case.
+Right click on MovieSurveyTest and select RUN AS ... JUNIT TEST
+
+To re-run either of the above click on the 'play' toolbar button (a white triangle with a green background circle, next to the bug icon).
+To check your program against the 'real' autograder and a standard compiler, right click on 'build.xml' and select Run As>Ant Script.
+Note (except Mac 10.4 and above), you will need to install a Java JDK and check that Eclipse Preferences 
+"Window>Preferences>Java>Installed JREs" includes the JDK.
+
+Example Output
+(The examples below are meant as guides; the given unit tests are authoritative).
+
+Example #1  - 
+The user input is 3\n5\n11\n   .... \n means newline i.e. the enter key is pressed
+
+Welcome. We're interested in how people are watching movies this year.
+Thanks for your time. - The WRITERS GUILD OF AMERICA.
+Please tell us about how you've watched movies in the last month.
+How many movies have you seen at the cinema?
+How many movies have you seen using a DVD or VHS player?
+How many movies have you seen using a Computer?
+Summary: 3 Cinema movies, 5 DVD/VHS movies, 11 Computer movies
+Total: 19 movies
+Fraction of movies seen at a cinema: 15.79%
+Fraction of movies seen outside of a cinema: 84.21%
+
+Example #2 
+User input is 1\n101\n98\n
+
+Welcome. We're interested in how people are watching movies this year.
+Thanks for your time. - The WRITERS GUILD OF AMERICA.
+Please tell us about how you've watched movies in the last month.
+How many movies have you seen at the cinema?
+How many movies have you seen using a DVD or VHS player?
+How many movies have you seen using a Computer?
+Summary: 1 Cinema movies, 101 DVD/VHS movies, 98 Computer movies
+Total: 200 movies
+Fraction of movies seen at a cinema: 0.50%
+Fraction of movies seen outside of a cinema: 99.50%

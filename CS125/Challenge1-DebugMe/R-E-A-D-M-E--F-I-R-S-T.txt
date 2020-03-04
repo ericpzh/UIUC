@@ -1,0 +1,137 @@
+Welcome to the first graded CS125 MP - 'DebugMe'
+
+******************************************************************************
+** Read this document from beginning to end, then read Factorial-ReadMe.txt **
+******************************************************************************
+
+* What you will learn (Learning Objectives)
+
+The purpose of these programming assignments is for you to learn following -
+
+PROGRAMMING CORE SKILLS:
+# Translate program descriptions into a complete Java program.
+# Find and fix runtime errors in existing code.
+# Use unit tests and manual testing as part of the development process.
+# Use Eclipse Development environment to create, run, test and commit programs.
+
+JAVA CORE KNOW-HOW:
+# Format text output using System.out and Scanner methods.
+# Read input from the keyboard using Scanner methods..
+# Create and use char int, boolean variables.
+# Perform simple calculations using arithmetic operators.
+# Use integer arithmetic
+# Use simple loops and conditions
+
+RELEVANT BOOK SECTIONS: (http://math.hws.edu/javanotes7)
+ch1.4 Fundamental Building Blocks of Programs
+ch2.1 The Basic Java Application,
+ch2.2 Variables and the Primitive Types
+ch2.3 Strings, Objects, Enums, and Subroutines
+ch2.4 Text Input and Output
+ch3.1 Loops and Branches
+
+
+Due:  Monday February 13, 2017 at 8pm 
+
+This graded assignment consists of three short programs - Factorial, Winner, QuizMaster.
+Each program contains bugs, is incomplete and requires further work.
+Each programming problem includes a ReadMe file (which you should read) and a test program.
+
+Each program is tested using different input values and its output is checked against the required output.
+If there is a discrepancy in your program's output, the Console window will include more details about which lines were correct and which are incorrect.
+
+Your challenge is to modify Factorial.java, Winner.java, and finally QuizMaster.java, so that all of the unit tests pass.
+The grade for MP1 is based on the fraction of unit tests that succeed.
+
+Do
+* READ THIS DOCUMENT and the other readme documents fully and carefully.
+(Students have lost marks or wasted time because they missed some of the instructions)
+* START EARLY and get HELP EARLY, well before the deadline.
+(Programmers often get stuck and need several breaks or help from others)
+* Make small changes and test often.
+* Test by running the program and entering values; ii) running the unit tests.
+* Run a single test to reduce the amount of distracting output.
+* Have fun. These MPs are designed to make you think and challenge you to use what you know to solve small versions of real-world typical problems.
+* Play with Eclipse learn how to use the debugger and the other tools (right click on everything).
+* Do add your NetId to the programs you write - you put in the time to create a useful program, you deserve credit!
+* Do commit all your changes back to subversion.
+* Do ensure that you commit a version that has no compile errors.
+
+Don'ts
+* Do not use System.exit  - the unit tests that call your main method will fail and your score will reflect this. 
+* Do not use static variables yet - just declare the variables you need inside the main method.
+* Do not expect written specifications to be unambiguous. They never are; the written instructions in class are more specific than typical programming challenges.
+As a general rule, the automated tests define the program behavior - they are more authoritative than the English prose,
+ so start by reading the actual test input and expected output.
+... but don't cheat by writing the specific output for each the test case.
+
+ if(factorial ==12) System.out.print("12! = 479001600");  // don't do this
+ if(factorial ==15) System.out.print("15! = 1307674368000");  // don't do this
+ 
+* Do not cheat or help others cheat. Instead type in every line of code using Eclipse and implement the solution yourself; you are the author. 
+* Do not copy and paste someone-else's code - that's cheating.
+* Do not post your code to a non UIUC website to get someone else to write (or debug) your code.
+
+It is a violation of academic rules of integrity to claim the work of others as your own or post
+solutions to share areas and websites. 
+It's also unfair, unethical and makes the cheater more likely to fail in quizzes, exams and in future courses.
+Copying / Copy-pasting code from other sources is very tempting and misses the point of these assignments.
+Penalties start with an automatic drop of one grade letter for the course, a public note on file,
+failing the entire course and include suspension/dismissal from the University.
+(See the CS125 Course Policy page, the CS website and the Student Code for the final word on cheating)
+- SO DONT COPY OR SHARE CODE!
+
+Good luck! We're here to help you.  It's more fun and productive to be working with others than working alone.
+Though we require you to type in every single line yourself using Eclipse, we encourage you to talk about the problems and to discuss the problems you run into.
+
+Details on how to complete task, including example output is included in each of the READMEs.
+
+* Submission, Grading and subversion (PLEASE REVIEW)
+
+In the package window, right click on your java file and select SHARE> COMMIT... and complete the dialog that pops up.
+
+You need to COMMIT your changes to the java files Factorial.java, QuizMaster.java, Winner.java back to the subversion repository.
+You may, but do not need to, make changes to any other files - for grading purposes we will only use the above three files.
+You can commit your files multiple times - in fact we expect you to. (You can even go back to previous versions that you committed).
+
+After the deadline we will grade the last version you committed BEFORE the deadline.
+
+You should check that your solution is correct by running the automated unit tests (there is a testing file provided for each one).
+
+You can run all three units in one go: In the package window right click on 'default package' and select RUN AS... JUNIT TEST
+
+You should run the autograder yourself: right click on AutomaticGrader and select Run As ... Java Application. 
+This will compile and running all three unit tests and printing a score based on the number of tests passed. 
+The console output is rather verbose though, so if you need to fix one of the programs it's easier to just 
+run that set of tests (or even just one test).
+
+* Eclipse hints
+The most useful views (windows) are : Package, Console, Problems, JUnit and SVN Repository views.
+Use the package view to check for compile errors and that all of your files are committed to subversion.
+It's a good idea to auto-format & indent your code, MacOSX:Shift-Command-F, Windows/Linux: Shift-CTRL-F (from memory).
+
+* Can't edit/run your code?
+Did you checkout "Challenge1-Debug" (correct), or your netid as an Eclipse project?
+Are you looking at the contents of a remote java file from the subversion server?
+If so, you can't edit it. The hint is the title of the window includes a version number e.g. "Example.java 1234"
+To fix close the tab then re-open the file from the package view
+ 
+* Code hints:
+There are a few example java class ("ExamplePrint.java" etc ) that illustrate a few relevant programming topics.
+
+* Getting help
+Please use the class newsgroup (Piazza). However please don't post solutions / correct code.
+(Newsgroup instructions are available on the FAQ section of the cs125 website)
+
+* Input Output
+You may use the standard builtin Java 'System.out.println' methods and the 'Scanner' class to write output and read values
+These are used by default in the given code.
+Alternatively, you may prefer to use the textbook's TextIO methods e.g. TextIO.putln("Hello").
+(We've included a specialized version of TextIO.java which is compatible with the automated grading)
+
+Use the TA office hours  - see the course website to find times.
+NB It's a good idea to start early and get stuck early, rather than panic two hours before the deadline!
+Good luck and have fun!
+
+Bill and the CS125 Team
+
