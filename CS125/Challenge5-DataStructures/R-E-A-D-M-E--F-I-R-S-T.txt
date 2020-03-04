@@ -1,0 +1,70 @@
+Challenge5-Data Structures - PLEASE READ CAREFULLY - 
+
+Due: Friday, March 18 @ 8pm. You have almost two weeks to complete this challenge
+Note: There will be additional regrade opportunities.
+BUT - make sure you know these concepts in two weeks for quiz opportunities
+
+IMPLEMENTATION REQUIREMENTS
+
+Your challenge is to implement the following eight classes 
+and become master of Stacks and Queues-
+
+Geocache.java
+GeocacheList.java
+KeyValueMap.java
+Queue.java
+Stack.java
+CallAStaticMethod.java
+StaticMethodsAreEasy.java
+UsingPublicFieldsIsEasy.java
+
+- such that all of the unit tests pass and the AutomaticGrader gives you 100%.
+
+
+HINTS
+Useful and interesting example java code can be found in the 
+ExampleDebugger, ExampleDoubleList and ExampleFileSearch classes.
+
+When you first check this project out, you'll see some compile errors in the package view.
+These will all need to be fixed (by creating the relevant classes and methods) to get an
+MP score greater than 1/100.
+StaticMethods and UsingPublicFields are the simplest.
+and Geocache before LabeledGeocache and GeocacheList.
+When writing each method, remember that other methods you have
+already written may simplify the task in hand.
+
+LEARNING OBJECTIVES
+
+The purpose of these programming assignments is for you to learn following -
+
+PROGRAMMING SKILLS & DOMAIN KNOWLEDGE:
+# Implement a data structures (list), without performance concerns.
+# Use procedural abstraction and code-reuse to hide implementation details
+
+RELEVANT BOOK SECTIONS: (http://math.hws.edu/javanotes)
+http://math.hws.edu/javanotes/c5/index.html
+http://math.hws.edu/javanotes/c5/s2.html (Constructors and Object Initialization)
+http://math.hws.edu/javanotes/c5/s3.html (5.3.4  Object-oriented Analysis and Design)
+http://math.hws.edu/javanotes/c5/s4.html (Card,Hand,Deck Programming example)
+
+* Submission, Grading and subversion (Same as before)
+
+In the package window, right click on your java file and select TEAM> COMMIT... and complete the dialog that pops up.
+
+You need to COMMIT your changes to the java files (back to the subversion repository.
+For grading purposes any changes made to the test java files, TextIO or the Autograder will be ignored.
+You can commit your files multiple times - in fact we expect you to. (You can even go back to previous versions that you committed).
+
+You can check that your solution is correct by running the automated unit tests (there is a testing file provided for each one).
+
+You can run all the tests in one go: In the package window right click on 'default package' and select RUN AS... JUNIT TEST
+You should run the autograder yourself: right click on AutomaticGrader and select RUN AS Java Application. This has the effect of
+compiling all java files and if there are no compile errors, running all the unit tests and printing a score based on the number of tests passed.
+A submission with a compile error will score 1/100.
+A submission with an infinite loop will score 0/100.
+
+As always there's Piazza and office hours. It helps to ask us questions well before the deadline. So get stuck early :-)
+
+Have fun and good luck!
+Bill and the CS125 team.
+
