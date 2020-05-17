@@ -1,0 +1,342 @@
+Date,Location,Type,TimeToManual,Cause
+Sep 2014,Street,Safe Operation,,Disengage for a perception discrepancy
+Sep 2014,Street,Safe Operation,,Disengage for a recklessly behaving agent
+Oct 2014,Street,Safe Operation,,Disengage for a perception discrepancy
+Oct 2014,Street,Failure Detection,0.7,Disengage for hardware discrepancy
+Oct 2014,Street,Safe Operation,,Disengage for incorrect behavior prediction of other traffic participants
+Oct 2014,Street,Failure Detection,0.85,Disengage for unwanted maneuver of the vehicle
+Oct 2014,Street,Failure Detection,0.8,Disengage for unwanted maneuver of the vehicle
+Oct 2014,Street,Failure Detection,0.9,Disengage for a software discrepancy
+Oct 2014,Street,Safe Operation,,Disengage for a perception discrepancy
+Oct 2014,Highway,Failure Detection,0.6,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.9,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.9,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,1,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.6,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.9,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.6,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,0.6,Disengage for a software discrepancy
+Oct 2014,Street,Safe Operation,,Disengage for unwanted maneuver of the vehicle
+Oct 2014,Street,Safe Operation,,Disengage for incorrect behavior prediction of other traffic participants
+Oct 2014,Street,Failure Detection,0.7,Disengage for a software discrepancy
+Oct 2014,Street,Failure Detection,,Disengage for a software discrepancy
+Nov 2014,Street,Failure Detection,0.5,Disengage for a software discrepancy
+Nov 2014,Highway,Failure Detection,0.8,Disengage for a software discrepancy
+Nov 2014,Street,Failure Detection,0.75,Disengage for a software discrepancy
+Nov 2014,Street,Failure Detection,0.2,Disengage for a software discrepancy
+Nov 2014,Street,Failure Detection,0.7,Disengage for a software discrepancy
+Nov 2014,Street ,Failure Detection ,,Disengage for a perception discrepancy
+Nov 2014,Street ,Safe Operation ,,Disengage for incorrect behavior prediction of other traffic participants
+Nov 2014,Street ,Failure Detection ,,Disengage for a software discrepancy 
+Nov 2014,Street ,Safe Operation ,,Disengage for a software discrepancy
+Nov 2014,Street ,Safe Operation ,,Disengage for unwanted maneuver of the vehicle 
+Nov 2014,Street ,Failure Detection ,,Disengage for incorrect behavior prediction of other traffic participants
+Nov 2014,Highway ,Failure Detection ,,Disengage for a recklessly behaving agent
+Nov 2014,Street ,Safe Operation ,,Disengage for unwanted maneuver of the vehicle
+Nov 2014,Street ,Failure Detection ,0.7,Disengage for unwanted maneuver of the vehicle
+Nov 2014,Street ,Safe Operation ,,Disengage for a perception discrepancy
+Nov 2014,Street ,Failure Detection ,0.2,Disengage for unwanted maneuver of the vehicle
+Nov 2014,Street ,Failure Detection ,1.1,Disengage for a software discrepancy
+Nov 2014,Street ,Safe Operation ,,Disengage for a perception discrepancy
+Nov 2014,Street ,Failure Detection ,2.2,Disengage for unwanted maneuver of the vehicle
+Nov 2014,Street ,Failure Detection ,,Disengage for unwanted maneuver of the vehicle
+Nov 2014,Street ,Failure Detection ,2.2,Disengage for a software discrepancy
+Dec 2014,Street ,Failure Detection ,0.2,Disengage for a software discrepancy
+Dec 2014,Street ,Failure Detection ,,Disengage for unwanted maneuver of the vehicle 
+Dec 2014,Street ,Failure Detection ,,Disengage for a software discrepancy
+Dec 2014,Street ,Failure Detection ,1.8,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,0.7,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,0.8,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,0.3,Disengage for a perception discrepancy
+Dec 2014,Street ,Failure Detection ,1.2,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,0.8,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street ,Failure Detection ,0.3,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,1.1,Disengage for a perception discrepancy
+Dec 2014,Street,Safe Operation,1.7,Disengage for a perception discrepancy
+Dec 2014,Street,Failure Detection 0.2s ,1.1,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection 0.8s ,,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection 0.6s ,,Disengage for a perception discrepancy
+Dec 2014,Street,Safe Operation,0.3,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,0.9,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,1,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,,Disengage for a perception discrepancy
+Dec 2014,Street,Failure Detection,0.7,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,0.6,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,1.3,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,0.4,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,0.2,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,2,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,0.8,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,0.8,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,1.6,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,0.8,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,0.3,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,1.7,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,0.3,Disengage for unwanted maneuver of the vehicle
+Dec 2014,Street,Failure Detection,0.4,Disengage for a recklessly behaving agent
+Dec 2014,Street,Failure Detection,0.2,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,1.2,Disengage for a software discrepancy
+Dec 2014,Street,Failure Detection,,Disengage for a perception discrepancy 
+Dec 2014,Street,Safe Operation,,Disengage for construction zone during testing
+Dec 2014,Street,Safe Operation,,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,0.6,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,,Disengage for a perception discrepancy 
+Dec 2014,Street,Failure Detection,1.3,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,1.9,Disengage for unwanted maneuver of the vehicle
+Jan 2015,Street,Failure Detection,,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.2,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.2,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.5,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.3,Disengage for unwanted maneuver of the vehicle
+Jan 2015,Street,Failure Detection,0.3,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.8,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.3,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,0.8,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.5,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,0.7,Disengage for a perception discrepancy
+Jan 2015,Street,Failure Detection,,Disengage for adverse road surface conditions such as road holes or bumps
+Jan 2015,Street,Failure Detection,0.4,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,0.3,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.7,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.3,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,1,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.4,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,1.4,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,1.9,Disengage for a perception discrepancy 
+Jan 2015,Street,Failure Detection,0.3,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,0.2,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.2,Disengage for a software discrepancy 
+Jan 2015,Street,Failure Detection,1,Disengage for a software discrepancy 
+Jan 2015,Street,Failure Detection,2,Disengage for a software discrepancy
+Jan 2015,Street,Failure Detection,0.2,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street,Failure Detection,0.8,Disengage for a perception discrepancy 
+Jan 2015,Highway,Safe Operation,,Disengage for a recklessly behaving agent 
+Jan 2015,Street,Failure Detection,0.2,Disengage for a perception discrepancy
+Jan 2015,Street ,Safe Operation,,Disengage for incorrect behavior prediction of other traffic participants
+Jan 2015,Street ,Failure Detection,0.3,Disengage for a software discrepancy
+Jan 2015,Street ,Failure Detection,1.4,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,1.3,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,0.9,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,,Disengage for a perception discrepancy
+Jan 2015,Street,Failure Detection,0.6,Disengage for a software discrepancy
+Jan 2015,Street ,Failure Detection,0.2,Disengage for a perception discrepancy 
+Jan 2015,Street ,Failure Detection,0.4,Disengage for a software discrepancy
+Jan 2015,Street ,Failure Detection,1.6,Disengage for a perception discrepancy 
+Jan 2015,Street ,Failure Detection,0.9,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,0.4,Disengage for a perception discrepancy 
+Jan 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Jan 2015,Street ,Failure Detection,0.6,Disengage for a software discrepancy
+Jan 2015,Street ,Failure Detection,0.6,Disengage for a software discrepancy 
+Jan 2015,Street ,Safe Operation -,,Disengage for hardware discrepancy
+Jan 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jan 2015,Street ,Failure Detection,0.09,Disengage for a software discrepancy 
+Jan 2015,Street ,Failure Detection,0.2,Disengage for hardware discrepancy 
+Feb 2015,Street ,Failure Detection,0.7,Disengage for hardware discrepancy
+Feb 2015,Street ,Failure Detection,1.6,Disengage for weather conditions during testing 
+Feb 2015,Highway ,Failure Detection,0.4,Disengage for weather conditions during testing 
+Feb 2015,Street ,Failure Detection,0.7,Disengage for weather conditions during testing
+Feb 2015,Street ,Failure Detection,1.2,Disengage for weather conditions during testing
+Feb 2015,Street ,Failure Detection,0.9,Disengage for weather conditions during testing
+Feb 2015,Street ,Failure Detection,0.3,Disengage for a recklessly behaving agent 
+Feb 2015,Street ,Failure Detection,,Disengage for a software discrepancy
+Feb 2015,Street ,Failure Detection,,Disengage for a software discrepancy
+Feb 2015,Street ,Safe Operation,,Disengage for a recklessly behaving agent 
+Feb 2015,Street ,Failure Detection,0.6,Disengage for a perception discrepancy
+Feb 2015,Street ,Safe Operation,,Disengage for a recklessly behaving agent 
+Feb 2015,Street ,Failure Detection,1,Disengage for a perception discrepancy
+Feb 2015,Street ,Failure Detection,0.4,Disengage for unwanted maneuver of the vehicle 
+Mar 2015,Street ,Failure Detection,1,Disengage for a software discrepancy
+Mar 2015,Street ,Failure Detection,0.2,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection,0.6,Disengage for a recklessly behaving agent 
+Mar 2015,Street ,Failure Detection,0.6,Disengage for a perception discrepancy
+Mar 2015,Street ,Safe Operation -,,Disengage for unwanted maneuver of the vehicle 
+Mar 2015,Street ,Failure Detection,1.5,Disengage for a recklessly behaving agent
+Mar 2015,Highway ,Failure Detection,0.5,Disengage for a perception discrepancy 
+Mar 2015,Highway,Failure Detection,,Disengage for unwanted maneuver of the vehicle
+Mar 2015,Street ,Failure Detection ,2,Disengage for a perception discrepancy
+Mar 2015,Street ,Safe Operation ,,Disengage for construction zone during testing
+Mar 2015,Street ,Failure Detection ,0.2,Disengage for a perception discrepancy
+Mar 2015,Highway ,Failure Detection ,0.4,Disengage for a perception discrepancy
+Mar 2015,Highway ,Safe Operation ,,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection,0.8,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection,0.7,Disengage for incorrect behavior prediction of other traffic participants
+Mar 2015,Street ,Failure Detection,1.6,Disengage for a perception discrepancy 
+Mar 2015,Street ,Failure Detection,0.4,Disengage for a perception discrepancy 
+Mar 2015,Street ,Failure Detection,0.5,Disengage for unwanted maneuver of the vehicle
+Mar 2015,Street ,Safe Operation ,,Disengage for incorrect behavior prediction of other traffic participants
+Mar 2015,Street ,Failure Detection ,1.4,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,0.2,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,0.1,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,0.6,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,0.5,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,1.4,Disengage for a recklessly behaving agent
+Mar 2015,Street ,Failure Detection ,,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,1.9,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,1.8,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,1,Disengage for a perception discrepancy
+Mar 2015,Street ,Failure Detection ,1.8,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,1.2,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,0.6,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,2.1,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,,Disengage for a software discrepancy
+Apr 2015,Street ,Failure Detection ,0.8,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,0.9,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,,Disengage for a software discrepancy
+Apr 2015,Street ,Failure Detection ,0.2,Disengage for a perception discrepancy
+Apr 2015,Street ,Failure Detection ,0.5,Disengage for a recklessly behaving agent
+Apr 2015,Street ,Failure Detection ,0.8,Disengage for a recklessly behaving agent
+Apr 2015,Street,Failure Detection,2.2,Disengage for a perception discrepancy
+Apr 2015,Street,Failure Detection,0.3,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.3,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.3,Disengage for unwanted maneuver of the vehicle 
+Apr 2015,Street,Failure Detection,1.6,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.9,Disengage for a recklessly behaving agent 
+Apr 2015,Street,Failure Detection,1.5,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.5,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.7,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.6,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.7,Disengage for a perception discrepancy 
+Apr 2015,Street,Safe Operation,,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.6,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.2,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.9,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,0.6,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,0.4,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,,Disengage for weather conditions during testing 
+Apr 2015,Street,Failure Detection,0.9,Disengage for a recklessly behaving agent 
+Apr 2015,Street,Failure Detection,1.4,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1.1,Disengage for a recklessly behaving agent 
+Apr 2015,Street,Failure Detection,,Disengage for a recklessly behaving agent 
+Apr 2015,Street,Failure Detection,0.7,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,0.6,Disengage for a perception discrepancy 
+Apr 2015,Street,Safe Operation,,Disengage for a perception discrepancy 
+Apr 2015,Highway ,Failure Detection,0.5,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,,Disengage for a recklessly behaving agent 
+Apr 2015,Highway ,Failure Detection,0.8,Disengage for a perception discrepancy 
+Apr 2015,Street,Safe Operation,,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,1,Disengage for a perception discrepancy 
+Apr 2015,Street,Failure Detection,,Disengage for a software discrepancy
+Apr 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+Apr 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Apr 2015,Street ,Failure Detection,,Disengage for a software discrepancy
+Apr 2015,Street ,Failure Detection,0.5,Disengage for unwanted maneuver of the vehicle 
+Apr 2015,Street ,Failure Detection,0.7,Disengage for a perception discrepancy 
+Apr 2015,Street ,Failure Detection,1.5,Disengage for hardware discrepancy
+May 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+May 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+May 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+May 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+May 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+May 2015,Highway ,Failure Detection,1.1,Disengage for a software discrepancy 
+May 2015,Freeway ,Failure Detection,0.8,Disengage for a software discrepancy 
+May 2015,Highway ,Failure Detection,0.6,Disengage for a software discrepancy 
+May 2015,Highway ,Failure Detection,,Disengage for a software discrepancy 
+May 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+May 2015,Street ,Safe Operation,,Disengage for a perception discrepancy
+May 2015,Street ,Failure Detection,0.4,Disengage for unwanted maneuver of the vehicle 
+May 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jun 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jun 2015,Street ,Failure Detection,,Disengage for a software discrepancy
+Jun 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jun 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jun 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jun 2015,Street ,Failure Detection,0.5,Disengage for a software discrepancy 
+Jun 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jun 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jun 2015,Highway ,Safe Operation,,Disengage for a perception discrepancy 
+Jun 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jun 2015,Highway ,Safe Operation,,Disengage for a perception discrepancy 
+Jul 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street,Safe Operation,,Disengage for a perception discrepancy
+Jul 2015,Highway ,Safe Operation,,Disengage for construction zone during testing 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for a software discrepancy
+Jul 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Jul 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy
+Jul 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Jul 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jul 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Jul 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+Jul 2015,Street ,Failure Detection,1.2,Disengage for a perception discrepancy 
+Jul 2015,Street ,Failure Detection,0.3,Disengage for a perception discrepancy
+Jul 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Jul 2015,Interstate ,Failure Detection,1.8,Disengage for a software discrepancy
+Jul 2015,Freeway ,Failure Detection,,Disengage for a software discrepancy 
+Jul 2015,Freeway ,Failure Detection,,Disengage for a software discrepancy 
+Jul 2015,Freeway ,Failure Detection,,Disengage for a software discrepancy
+Jul 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Jul 2015,Street ,Failure Detection,,Disengage for hardware discrepancy
+Jul 2015,Highway ,Failure Detection,0.9,Disengage for a software discrepancy 
+Jul 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Aug 2015,Street ,Failure Detection,,Disengage for a software discrepancy 
+Aug 2015,Street ,Safe Operation,,Disengage for a recklessly behaving agent 
+Aug 2015,Highway ,Failure Detection,,Disengage for a software discrepancy 
+Aug 2015,Street ,Safe Operation,,Disengage for a recklessly behaving agent
+Aug 2015,Highway ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Aug 2015,Street ,Failure Detection,,Disengage for unwanted maneuver of the vehicle 
+Aug 2015,Street ,Failure Detection,,Disengage for hardware discrepancy
+Sep 2015,Street ,Failure Detection,0.2,Disengage for a perception discrepancy 
+Sep 2015,Street,Failure Detection,,Disengage for a perception discrepancy
+Sep 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Street ,Safe Operation,,Disengage for a recklessly behaving agent 
+Sep 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Highway ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Highway ,Failure Detection,,Disengage for a software discrepancy 
+Sep 2015,Street ,Failure Detection,,Disengage for a perception discrepancy 
+Sep 2015,Highway ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Street ,Failure Detection,1.5,Disengage for a software discrepancy 
+Sep 2015,Street ,Failure Detection,0.8,Disengage for a perception discrepancy 
+Sep 2015,Highway ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Sep 2015,Highway ,Failure Detection,2.1,Disengage for a software discrepancy 
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy
+Oct 2015,Street ,Failure Detection,1.3,Disengage for unwanted maneuver of the vehicle 
+Oct 2015,Highway ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Oct 2015,Highway ,Failure Detection,,Disengage for a software discrepancy
+Oct 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Street ,Safe Operation,,Disengage for a perception discrepancy 
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Highway ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Street,Failure Detection,0.4,Disengage for a perception discrepancy
+Oct 2015,Street ,Safe Operation ,,Disengage for incorrect behavior prediction of other traffic participants
+Oct 2015,Highway ,Failure Detection,,Disengage for hardware discrepancy 
+Oct 2015,Street ,Safe Operation ,,Disengage for a perception discrepancy
+Nov 2015,Highway ,Safe Operation ,,Disengage for weather conditions during testing 
+Nov 2015,Street ,Safe Operation ,,Disengage for a software discrepancy 
+Nov 2015,Street ,Safe Operation,,Disengage for a software discrepancy
+Nov 2015,Street ,Safe Operation ,,Disengage for a software discrepancy 
+Nov 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Nov 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Nov 2015,Highway ,Safe Operation ,,Disengage for a recklessly behaving agent 
+Nov 2015,Street ,Safe Operation ,,Disengage for a recklessly behaving agent 
+Nov 2015,Street ,Safe Operation,,Disengage for a perception discrepancy
+Nov 2015,Street ,Failure Detection,1.8,Disengage for emergency vehicle during testing 
+Nov 2015,Street ,Safe Operation,,Disengage for unwanted maneuver of the vehicle 
+Nov 2015,Street ,Safe Operation ,,Disengage for unwanted maneuver of the vehicle 
+Nov 2015,Highway ,Failure Detection,,Disengage for a software discrepancy
+Nov 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Nov 2015,Street ,Failure Detection,,Disengage for hardware discrepancy 
+Nov 2015,Street,Safe Operation,,Disengage for a recklessly behaving agent
