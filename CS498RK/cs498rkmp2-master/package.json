@@ -45,7 +45,7 @@
     "react-autosuggest": "^9.4.2",
     "react-bootstrap-table": "^4.3.1",
     "react-bootstrap-typeahead": "^3.3.4",
-    "react-dev-utils": "^5.0.2",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.5.1",
     "react-plotly.js": "^2.2.0",
     "react-router": "^4.3.1",
