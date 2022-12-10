@@ -20,8 +20,8 @@
     "url": "https://github.com/uiuc-web-programming/mp3_starter_17.git"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "mongoose": "^5.4.18",
     "nodemon": "^1.11.0"
   }
